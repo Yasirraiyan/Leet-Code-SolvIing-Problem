@@ -1,1 +1,1 @@
-Accepted.Solve by self succesfully
+Accepted.Solve by self succesfully.without any hints
