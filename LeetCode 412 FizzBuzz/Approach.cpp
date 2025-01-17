@@ -14,3 +14,7 @@ if(i%3==0)
   return kori "Fizz";
 if(i%5==0)
   return kori "Buzz";
+amar pura array chaise output e 
+so return gula arr[i] te store kori
+then 1 ta for loop chalai i=0 to i=n porjonto
+then print kori arr[];
