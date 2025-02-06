@@ -1,1 +1,1 @@
-Accepted.Solve successfully.
+Accepted.Solve successfully.Without Seeing any solution or help or hints from another.
