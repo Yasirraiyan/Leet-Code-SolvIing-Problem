@@ -4,7 +4,7 @@ public:
         int sum1=0;
         int sum2=0;
         int result;
-        for(int i=0;i<=n;i++)
+        for(int i=1;i<=n;i++)
         {
             if(i%m!=0)
             {
