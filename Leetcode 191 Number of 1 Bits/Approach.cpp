@@ -3,7 +3,7 @@ Amar 1 ta integer ase. Amar lagbe oi integer e kotogula 1 ase binary te neyar po
   Tai 1 ta while loop chalai where n>0
    1 ta integer nei rem 
 rem=n%2;
-Hishaber sunidhar jonnoi 1 ta vector<int>ans array nei jetay rem store kori.
+Hishaber subidhar jonnoi 1 ta vector<int>ans array nei jetay rem store kori.
 so,
   ans.push_back(rem);
 n=n/2 kori.
