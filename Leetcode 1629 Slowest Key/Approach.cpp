@@ -77,7 +77,8 @@ public:
         // 3. সর্বোচ্চ ডিউরেশন যুক্ত কী গুলো থেকে lexicographical order-এ বড় কীটি নেওয়া
         for(int m = 0; m < reserve.size(); m++) {
             if(reserve[m] == maxtime) {
-                // maxKey এবং keysPressed[m] এর মধ্যে বড়টি maxKey-এ অ্যাসাইন করা হয়
+  // maxKey এবং keysPressed[m] এর মধ্যে বড়টি maxKey-এ অ্যাসাইন করা হয়.Eta lexicographically max ba pore k tar jonnou use hoy jemon a,c .c lexicographically pore tai
+                etar ans c
                 maxKey = max(maxKey, keysPressed[m]);
             }
         }
