@@ -1,0 +1,1 @@
+Accepted.Solve successfully.
