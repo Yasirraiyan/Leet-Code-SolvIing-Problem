@@ -125,3 +125,6 @@ public:
 
     }
 };
+Concept Prefix Sum:
+------------------
+Karon array traverse e both forward and reverse traverse ami 1 ta index tar ager sob index er stored valuer sum rakhi tai.
