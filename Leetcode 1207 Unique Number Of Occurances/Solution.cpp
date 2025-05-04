@@ -14,13 +14,13 @@ public:
         {
          reserve.push_back(it.second);
         }
-        for(int i=0;i<reserve.size();i++)
+        for(int j=0;j<reserve.size();j++)
         {
-          for(int j=i+1;j<reserve.size();j++)
+          for(int k=j+1;k<reserve.size();k++)
           {
-            if(i!=j)
+            if(k!=j)
             {
-              if(reserve[i]==reserve[j])
+              if(reserve[k]==reserve[j])
               {
                 isuniqueoccurance=false;
               }
