@@ -1,1 +1,1 @@
-Accepted.Solve successfuuly by myself without seeing any solution or hints from another.
+Both Accepted.Solve successfuuly both solution by myself without seeing any solution or help or hints from another.
