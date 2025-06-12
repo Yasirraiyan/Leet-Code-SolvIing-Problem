@@ -114,16 +114,6 @@ ListNode* mid = s.middleNode(head);
 তবে চাইলে তুমি Floyd's slow-fast pointer টেকনিক ব্যবহার করে আরো efficient ভাবে (O(1) space) এটা
 Full Code:
 -------------
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
 class Solution 
 {
 public:
