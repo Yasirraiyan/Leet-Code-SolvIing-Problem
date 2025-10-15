@@ -148,3 +148,130 @@ Restart -> currIndex = 0 -> Slide1
 
 
 যদি চাও আমি এই logic দিয়ে পুরো React functional component code লিখে দিই যা slide দেখাবে এবং buttons disable করবে first/last slide অনুযায়ী।
+
+
+Concept of React:
+--------------------
+
+  ১. useState Hook
+const [currIndex, setCurrIndex] = useState(0);
+
+
+Concept: State Management
+
+কেন ব্যবহার: React component re-render করতে state দরকার। এখানে আমরা track করছি কোন slide দেখানো হচ্ছে।
+
+কীভাবে কাজ করছে:
+
+currIndex → current slide-এর index।
+
+setCurrIndex() → এই function দিয়ে আমরা currIndex update করি।
+
+State update হলে React আবার component re-render করে এবং নতুন slide দেখায়।
+
+Bangla Example:
+
+currIndex = 0   // প্রথম slide
+setCurrIndex(1) // next click করলে currIndex=1 হবে, slide 2 দেখাবে
+
+২. Event Handling
+<button onClick={handleNext}>Next</button>
+
+
+Concept: Handling user interactions
+
+কেন ব্যবহার: Button click এ আমরা slide change করতে চাই।
+
+কীভাবে কাজ করছে:
+
+React-এ onClick event দিয়ে function bind করা হয়।
+
+Click করলে handleNext run হয়, এবং state update হয়।
+
+Bangla Example:
+
+Next button চাপলে handleNext() run হবে।
+
+৩. Conditional Rendering / Props Use
+disabled={currIndex === slides.length - 1}
+
+
+Concept: Conditional rendering / dynamic props
+
+কেন ব্যবহার: Button disable করতে চাই যখন last slide এ পৌঁছেছি।
+
+কীভাবে কাজ করছে:
+
+JavaScript condition দিয়ে JSX element props dynamic set করা যায়।
+
+যদি currIndex === slides.length - 1 সত্য হয়, Next button disable হবে।
+
+Bangla Example:
+
+if(currIndex === 0){
+   Prev button disabled
+}
+if(currIndex === slides.length-1){
+   Next button disabled
+}
+
+৪. Props
+function Slides({ slides })
+
+
+Concept: Passing data to components
+
+কেন ব্যবহার: Slide data parent থেকে child component এ পাঠানোর জন্য।
+
+কীভাবে কাজ করছে:
+
+slides array parent component থেকে Slides component এ পাঠানো হচ্ছে।
+
+আমরা slides[currIndex].title এবং slides[currIndex].text ব্যবহার করে display করছি।
+
+৫. JSX
+<div id="slide" className="card text-center">
+  <h1>{slides[currIndex].title}</h1>
+  <p>{slides[currIndex].text}</p>
+</div>
+
+
+Concept: Declarative UI / JSX
+
+কেন ব্যবহার: UI element তৈরি করতে।
+
+কীভাবে কাজ করছে:
+
+আমরা variable (slides[currIndex].title) সরাসরি JSX-এ inject করতে পারি।
+
+React automatically re-render করে যখন state change হয়।
+
+৬. Functional Component
+function Slides({ slides }) { ... }
+
+
+Concept: Functional Components
+
+কেন ব্যবহার: Modern React-এ functional component state ও hooks support করে।
+
+কীভাবে কাজ করছে:
+
+Component একটি function যা props নেয়।
+
+Return করে JSX UI।
+
+State change হলে React পুনরায় function run করে এবং নতুন UI দেখায়।
+
+✅ সংক্ষেপে
+
+useState: state tracking & re-rendering
+
+Event handling: handle user actions like Next/Prev/Restart
+
+Props: parent থেকে data receive করা
+
+Conditional Rendering: buttons disable করা based on state
+
+JSX: declarative UI
+
+Functional Component: modern React style
